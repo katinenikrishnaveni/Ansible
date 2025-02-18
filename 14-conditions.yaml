@@ -1,6 +1,8 @@
 - name: check value is greatethan or not
   hosts: local
   connection: local
+  vars:
+    my_num: 5
   tasks:
   - name: print greate than 10
     ansible.builtin.debug:
