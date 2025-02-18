@@ -1,7 +1,7 @@
 - name: variable
   hosts: local
   connection: local
-  var:
+  vars:
     course: "Devops with AWS"
     duration: 120hrs
     Trainer: sivakumar
