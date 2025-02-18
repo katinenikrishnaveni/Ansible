@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: play1 from the task1
-    ansinble.builtin.package:
+    ansinble.builtin.debug:
     msg: "play1 task will performed task1"
 
 - name: play2
@@ -11,5 +11,5 @@
   connection: local
   tasks:
   - name: play2 from the task1
-    ansinble.builtin.package:
+    ansinble.builtin.debug:
     msg: "play2 task will performed task1"    
