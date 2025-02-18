@@ -12,6 +12,6 @@
   tasks:
   - name: preforence variables
     vars:
-    GREET: "task"
+      GREET: "task"
     ansible.builtin.debug:
       msg: "hello from {{GREET}}"
