@@ -1,0 +1,20 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    course_type: "Devops with AWS"
+    Duration: 120HRS
+    topics:
+    - linux
+    - shell
+    - ansible
+    - asw
+    live: true
+    tools:
+    - ci: junkins
+    - cloud: AWS 
+    - containarazation: dockors
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+       msg: "Course is {{course_type}},duration is {{Duration}}, topics are:{{topics}},it is live {{live}},using tools are:{{tools}}"
