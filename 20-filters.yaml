@@ -39,5 +39,17 @@
     vars:
       name: "Sri Ram"
     ansible.builtin.debug:
-      msg: "{{ name| upper}}"       
+      msg: "{{ name| upper}}"   
+      
+  - name: print min and max
+    vars:
+      num: [23,43,12,54,1,89,32]
+    ansible.builtin.debug:
+      msg: "Mai is: {{num|max}},min is:{{num|min}}"  
+
+  - name: check ipaddress is valid or not
+    vars:
+      ip: "192.168.1.1"
+    ansible.builtin.debug:
+      msg: "{{ ip | ansible.utils.ipaddr }}"    
      
