@@ -2,14 +2,14 @@
   hosts: local
   connection: local
   vars:
-  subnet_id: subnet-0b492205a6cc3fe67
-  sg_id: sg-0b4bb981a50d7faac
-  ami_id: ami-09c813fb71547fc4f
-  instance_type: t3.micro
-  instances:
-  - mysql
-  - backend
-  - frontend
+    subnet_id: subnet-0b492205a6cc3fe67
+    sg_id: sg-0b4bb981a50d7faac
+    ami_id: ami-09c813fb71547fc4f
+    instance_type: t3.micro
+    instances:
+    - mysql
+    - backend
+    - frontend
   tasks:
   - name: create ex2 instances
     amazon.aws.ec2_instance:
