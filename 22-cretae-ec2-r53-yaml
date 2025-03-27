@@ -12,7 +12,7 @@
   - frontend
   tasks:
   - name: create ex2 instances
-    ansible.aws.ec2_instances:
+    ansible.aws.ec2_instance:
       name: "{{item}}"
       subnet_id: "{{subnet_id}}"
       security_group: "{{sg_id}}"
